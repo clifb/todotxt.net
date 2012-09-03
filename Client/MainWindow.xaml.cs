@@ -50,6 +50,8 @@ namespace Client
 		WindowLocation _previousWindowLocaiton;
 		private Help _helpPage;
 
+		public TaskListViewModel ViewModel { get; set; }
+
 		public MainWindow()
 		{
 			try

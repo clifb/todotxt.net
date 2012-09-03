@@ -79,20 +79,21 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="CheckUpdate.cs" />
-    <Compile Include="PostponeDialog.xaml.cs">
+    <Compile Include="CustomControls\IntelliTextBox.cs" />
+    <Compile Include="Dialogs\PostponeDialog.xaml.cs">
       <DependentUpon>PostponeDialog.xaml</DependentUpon>
     </Compile>
-    <Compile Include="FilterDialog.xaml.cs">
+    <Compile Include="Dialogs\FilterDialog.xaml.cs">
       <DependentUpon>FilterDialog.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Help.xaml.cs">
-      <DependentUpon>Help.xaml</DependentUpon>
+    <Compile Include="Dialogs\HelpDialog.xaml.cs">
+      <DependentUpon>HelpDialog.xaml</DependentUpon>
     </Compile>
     <Compile Include="HotKey.cs" />
     <Compile Include="HotKeyMainWindows.cs" />
     <Compile Include="ObserverChangeFile.cs" />
-    <Compile Include="Options.xaml.cs">
-      <DependentUpon>Options.xaml</DependentUpon>
+    <Compile Include="Dialogs\OptionsDialog.xaml.cs">
+      <DependentUpon>OptionsDialog.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\SharedAssemblyInfo.cs" />
     <Compile Include="Resource.Designer.cs">
@@ -100,6 +101,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource.resx</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\TaskListViewModel.cs" />
+    <Compile Include="ViewModels\TaskViewModel.cs" />
     <Compile Include="TrayMainWindows.cs" />
     <Compile Include="User.cs" />
     <Compile Include="User.Designer.cs">
@@ -107,15 +110,15 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>User.settings</DependentUpon>
     </Compile>
-    <Page Include="PostponeDialog.xaml">
+    <Page Include="Dialogs\PostponeDialog.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="FilterDialog.xaml">
+    <Page Include="Dialogs\FilterDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Help.xaml">
+    <Page Include="Dialogs\HelpDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -131,9 +134,13 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Options.xaml">
+    <Page Include="Dialogs\OptionsDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>

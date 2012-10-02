@@ -33,3 +33,7 @@ TestResults
 *.swp
 
 testtasks.txt
+
+# NCrunch files
+*.ncrunch*
+*.crunchsolution.cache
